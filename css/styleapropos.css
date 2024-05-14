@@ -1,0 +1,247 @@
+body {
+    background-color: black;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.page {
+    position: relative;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.video-presentation {
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+.section-presentation {
+    padding: 10px;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 80px;
+}
+
+.projet-presentation-text {
+    text-align: justify;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.carousel-content {
+    text-align: center;
+    background: transparent;
+    color: white;
+    overflow: hidden;
+    width: auto;
+    /* margin-left: 150px;
+    margin-right: 150px; */
+    height: 500px;
+}
+
+
+.carousel-content .header {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-top: -10px;
+}
+
+.carousel-content .description {
+    font-size: 16px;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.carousel-content .img {
+    width: 180px;
+    height: 200px;
+    margin-bottom: -20px;
+}
+
+.carousel-content .carousel-container {
+    float: left;
+    height: 450px;
+    overflow: hidden;
+    width: 40%;
+}
+
+.carousel-content .content {
+    /* border-left: 1px solid #eee; */
+    float: left;
+    /* height: 450px; */
+    padding: 10px;
+    width: 50%;
+}
+
+.slick-slider {
+    margin: 22% 0;
+    height: 300px;
+}
+
+.items-content {
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.items {
+    padding: 1%;
+    position: relative;
+    text-align: center;
+}
+
+.items img {
+    width: 90px;
+    height: 100px;
+    cursor: pointer;
+    transition: scale .1s;
+}
+
+.imgskills {
+    width: 250px;
+    height: 80px;
+}
+
+.items img:hover {
+    scale: 1.1
+}
+
+.select {
+    scale: 1.5;
+}
+
+footer {
+    display: flex;
+}
+
+img.imgfooter {
+    width: 30%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+.footer-basic {
+    position: relative;
+    bottom: 0;
+    padding: 10px;
+    background-color: #232323;
+    color: #ffffff;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.footerpage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footeretv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoreseaux {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.reseaux {
+    color: white;
+    font-size: 30px;
+}
+
+@media (max-width: 900px) {
+
+    .video-presentation {
+        margin: 1px;
+    }
+
+    .section-title h2 {
+        font-size: 20px;
+    }
+
+    .projet-presentation-text {
+        font-size: 15px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .carousel-content .img {
+        margin-bottom: -10px;
+    }
+
+    .carousel-content {
+        width: 100%;
+    }
+
+    .items img {
+        width: 70px;
+        height: 80px;
+    }
+
+    .imgskills {
+        width: 150px;
+        height: 50px;
+    }
+
+    .carousel-content .header {
+        font-size: 20px;
+    }
+
+    .content {
+        float: right;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .items-content {
+        margin-left: 1;
+        margin-right: 1;
+    }
+
+    .carousel-content .carousel-container {
+        margin-left: 5px;
+        width: 35%;
+    }
+
+    .description {
+        text-align: right;
+        font-size: 11px;
+        width: 160px;
+    }
+
+    .page {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
