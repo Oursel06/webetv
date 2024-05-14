@@ -55,7 +55,7 @@
     </div>
     <div class="video-container" data-aos="fade-up" data-aos-delay="100">
         <?php
-        $result = executeRequete("SELECT imageisotope, description, url, title, t_libelle, c_libelle FROM video, type_video, categorie_video WHERE type_video.t_id = video.t_id AND categorie_video.c_id = video.c_id AND type_video.t_libelle = 'podcast'");
+        $result = executeRequete("SELECT image, description, url, title, t_libelle, c_libelle FROM video, type_video, categorie_video WHERE type_video.t_id = video.t_id AND categorie_video.c_id = video.c_id AND type_video.t_libelle = 'podcast'");
 
         foreach ($result as $row) {
             if ($row['c_libelle'] == "Initiative") {
@@ -85,7 +85,7 @@
 
         ?>
             <div style="margin: 5px;" class="video-item filter-<?php echo $categorie; ?>">
-                <div class="interview_card" style="border: solid 3px <?php echo $color; ?>; background-image: url(../images/<?php echo $row['imageisotope']; ?>); background-repeat: no-repeat; background-size: cover;">
+                <div class="interview_card" style="border: solid 3px <?php echo $color; ?>; background-image: url(../images/<?php echo $row['image']; ?>); background-repeat: no-repeat; background-size: cover;">
                     <div class="textonvideo">
                         <div class="textonvideotext">
                             <?php echo $row['description']; ?>

@@ -108,7 +108,7 @@
   <?php
   require("./config.php");
   // Exécutez une requête SQL pour récupérer les articles les plus récents
-  $result = executeRequete("SELECT imageisotope, url, title, t_libelle, c_libelle FROM video, type_video, categorie_video WHERE type_video.t_id = video.t_id AND categorie_video.c_id = video.c_id ORDER BY v_id DESC LIMIT 4");
+  $result = executeRequete("SELECT image, url, title, t_libelle, c_libelle FROM video, type_video, categorie_video WHERE type_video.t_id = video.t_id AND categorie_video.c_id = video.c_id ORDER BY v_id DESC LIMIT 4");
   ?>
 
   <div class="homepage">
@@ -122,7 +122,7 @@
       if ($row['c_libelle'] == "Sante") $color = "#69C6D9";
     ?>
 
-      <div class="homepage_card" style="border: solid 3px <?php echo $color; ?>; background-image: url(./images/<?php echo $row['imageisotope']; ?>); background-repeat: no-repeat; background-size: cover;background-position: center center;">
+      <div class="homepage_card" style="border: solid 3px <?php echo $color; ?>; background-image: url(./images/<?php echo $row['image']; ?>); background-repeat: no-repeat; background-size: cover;background-position: center center;">
         <a href="<?php echo $row['url']; ?>">
           <button class="play-button" style="background-color: <?php echo $color; ?>">
             <svg viewBox="0 0 100 100" width="40">
