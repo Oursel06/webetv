@@ -5,7 +5,7 @@
 <?php require("../partials/public_header.php");?>
 
 <body>
-    <h1 style="margin-top: 7% !important;">PHRASE D'ACCROCHE</h1>
+    <!-- <h1 style="margin-top: 7% !important;">Blogs</h1>
 
     <div class="containerarticle">
         <div class="box">
@@ -38,9 +38,10 @@
                 <h4>santé</h4><button class="sante">Voir la catégorie</button>
             </div>
         </div>
-    </div>
-
-    <h1>PAR ORDRE DE NOUVEAUTE</h1>
+    </div> -->
+<br><br><br>
+    <h1>Reportages bientôt disponibles</h1>
+    <!-- <h1>PAR ORDRE DE NOUVEAUTE</h1> -->
 
 
     <?php
