@@ -691,11 +691,10 @@ footer a {
 }
 
 .popcast_title {
-  position: absolute;
   color: white;
   margin-left: 10px;
   margin-top: 15px;
-  font-size: 45px;
+  font-size: 25px;
 }
 
 .popcast_buttons {
@@ -1051,7 +1050,7 @@ input.inputcoco {
   /* flex-box, center image in cell */
   display: -webkit-box;
   display: -webkit-flex;
-  display:         flex;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
@@ -1082,13 +1081,13 @@ input.inputcoco {
   filter: none;
 }
 
-@media screen and ( min-width: 768px ) {
+@media screen and (min-width: 768px) {
   .carousel-cell {
     height: 400px;
   }
 }
 
-@media screen and ( min-width: 960px ) {
+@media screen and (min-width: 960px) {
   .carousel-cell {
     width: 60%;
   }
@@ -1101,20 +1100,30 @@ input.inputcoco {
   background: transparent;
   opacity: 0.6;
 }
+
 .flickity-prev-next-button:hover {
   background: transparent;
   opacity: 1;
 }
+
 /* arrow color */
 .flickity-prev-next-button .arrow {
   fill: white;
 }
+
 .flickity-prev-next-button.no-svg {
   color: white;
 }
+
 /* closer to edge */
-.flickity-prev-next-button.previous { left: 0; }
-.flickity-prev-next-button.next { right: 0; }
+.flickity-prev-next-button.previous {
+  left: 0;
+}
+
+.flickity-prev-next-button.next {
+  right: 0;
+}
+
 /* hide disabled button */
 .flickity-prev-next-button:disabled {
   display: none;
@@ -1654,7 +1663,7 @@ main.mentionslegales {
   padding: 14px;
   margin-bottom: 20px;
   border-radius: 20px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   animation: anime 0.5s ease-out;
 }
 
